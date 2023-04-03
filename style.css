@@ -1,0 +1,266 @@
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #5072A7;
+    background-color: #F5F5F5;
+}
+
+/* Navigation Bar Section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #13293d;
+    padding: 1%;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 200%;
+    color: aliceblue;
+}
+
+
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    min-width: 300px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: aliceblue;
+    text-decoration: none;
+    border-bottom: 2px solid;  
+}
+
+a:hover {
+    cursor: pointer;
+    opacity: .7;
+    transition: 0.3s;
+}
+ 
+/* Hero Section */
+.hero-image {
+background-image: url(images/heroImage.jpg);
+width: 100%;
+height: 200px;
+margin-bottom: 2%;
+}
+
+
+/* Main Section  */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+/* Content Subsection of Main */
+
+.content {
+    flex: 1;
+    text-align: center;
+    margin: 10px 50px;
+    padding: 20px 10px
+}
+
+
+/* Aside Section */
+
+h2 {
+    font-size: 180%;
+    margin-left: 50%;
+    text-shadow: 1px 1px 1px #13293d;
+}
+
+aside {
+    display: flex;
+    flex: 0 1 300px;
+    border-right:  2px solid black;
+}
+
+
+
+/* About Section */
+
+p {
+    margin: 0;
+    font-size: 120%;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/* Work Section */
+
+img {
+    height: 200px;
+    width: 100%;
+    border: 5px solid lightblue;
+    
+}
+
+img:hover {
+    box-shadow: 15px 5px 5px;
+    transition: 0.3s;
+}
+   
+.app-img {
+    position: relative;
+    margin: 10px;
+}
+
+h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    font-size: 100%;
+    background-color: lightblue;
+    color: black;
+    padding: 5px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+h3:hover {
+    box-shadow: 10px 5px 5px;
+    transition: 0.3s;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.sub-apps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+}
+
+
+/* Contact Section */
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-list {
+    display: flex;
+    list-style: none;
+  }
+
+  .contact-link {
+    padding: 10px;
+  }
+
+  .contact-link a {
+    color: #5072A7;
+    border-bottom: 3px solid;
+    text-decoration: none;
+    /* margin-right: 5px; */
+    font-weight: 500;
+  }
+
+/* Resonsive website */
+
+@media screen and (max-width: 768px) {
+    /* header component for 768px */
+   header {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+             
+    }
+    .nav-list {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .nav-item {
+        padding-bottom: 30px;
+        
+    }
+
+    /* nav ul li a {
+        border: none;
+
+    } */
+
+    .nav-item a:hover {
+        padding: 10px 50px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    h2 {
+        text-align: center;
+        justify-content: center;
+        margin-left: 45%;
+        margin-bottom: 0;
+    }
+
+  
+    aside {
+        border-right: none;
+    }
+    
+
+    p {
+        text-align: center;
+    }
+
+    .content {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .sub-apps {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .contact-list {
+        flex-direction: column;
+    }
+
+   .contact-link a {
+    margin: 0;
+    text-align: center;
+    padding: 10px 60px;
+    border: none;
+   }
+
+   .contact-info a:hover {
+    background-color: #5072A7;
+    color: #F5F5F5;
+   }
+
+}
+
+ 
